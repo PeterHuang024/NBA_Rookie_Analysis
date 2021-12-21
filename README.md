@@ -23,3 +23,25 @@ Last, plotting the correlation matrix (figure 3) to see the relation between fea
 First, the original data has 1,340 data points but there is duplication. After removing duplications, there are 1,328 distinct rows remaining. Next, there is no null value and all features are float or integer type in the dataset. Then, separated into 80% training data and 20% testing data. In this analysis, I used the training data to do the parameter tuning and testing data to check each model’s performance. I also tried some feature engineering such as PCA and scaled features; however, the performance does not improve. Thus, in this analysis, I only report the result using original attributes.
 
 ## Classification Models & Result
+This task used 3 tree-based algorithms: Decision Tree, Random Forests, and Gradient Boosting Trees. For parameter-tuning, applying grid search with 5 folds cross validation and accuracy as evaluation to train 3 models and get the best parameters. Model results are summarized in below table. In addition, trained a random forest with scaled features to compare feature importance. Importance bar charts and features distribution in figure 4, 5, 6, 7. (More model and evaluation detail such as AUC graphs and model training can refer the notebook)
+
+| Metrics\Algorithms | Decision Tree | Random Forest | Gradient Boosting |
+|:--:|:--:||:--:|:--:|
+| Precision | 0.78 | 0.81 | 0.80 |
+| Recall | 0.79 | 0.80 | 0.84 |
+| F1-score | 0.79 | 0.80 | 0.81 |
+| Accuracy | 71% | 74% | 74% |
+| AUC | 0.73 | 0.78 | 0.78 |
+
+| ![figure4](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_4.png) | ![figure5](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_5.png) 
+|:--:|:--:|
+| Figure 4: Feature importance from random forest. The top 5 features are game played, field goal made, points per game, field goal percentage, and minutes played. | Figure 5: Distribution of field goals made of players play over five years or not |
+| ![figure6](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_6.png) | ![figure7](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_7.png) 
+|:--:|:--:|
+| Figure 6: Distribution of average points per game of players play over five years or not. The red line is the average of rookie of the year in the past 25 seasons. | Figure 7: Distribution of average field goal percentage of players play over five years or not. The red line is the average of rookie of the year in the past 25 seasons. |
+
+## Reference
+- [NBA players career duration dataset](https://www.kaggle.com/sveneschlbeck/nba-players-career-duration)
+- [Scikit-Learn for machine learning](https://scikit-learn.org/stable/)
+- [NBA career length information](https://dunkorthree.com/nba-player-career-length/)
+- [Rookie of the year data](http://www.espn.com/nba/history/awards/_/id/35)
