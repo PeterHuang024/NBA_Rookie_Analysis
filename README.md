@@ -14,3 +14,6 @@ Last, plotting the correlation matrix (figure 3) to see the relation between fea
 | ![figure1](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_1.png) | ![figure2](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_2.png) 
 |:--:|:--:|
 | Figure 1: Distribution of game played of players play over five years or not | Figure 2: Distribution of offensive rebounds of players play over five years or not |
+| ![figure3](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_3.png) |
+|:--:|
+| Figure 3: Pairwise correlation of all 19 features. Both axes are 19 features.|
