@@ -14,6 +14,12 @@ Last, plotting the correlation matrix (figure 3) to see the relation between fea
 | ![figure1](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_1.png) | ![figure2](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_2.png) 
 |:--:|:--:|
 | Figure 1: Distribution of game played of players play over five years or not | Figure 2: Distribution of offensive rebounds of players play over five years or not |
+
 | ![figure3](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_3.png) |
 |:--:|
 | Figure 3: Pairwise correlation of all 19 features. Both axes are 19 features.|
+
+## Data Preprocessing
+First, the original data has 1,340 data points but there is duplication. After removing duplications, there are 1,328 distinct rows remaining. Next, there is no null value and all features are float or integer type in the dataset. Then, separated into 80% training data and 20% testing data. In this analysis, I used the training data to do the parameter tuning and testing data to check each model’s performance. I also tried some feature engineering such as PCA and scaled features; however, the performance does not improve. Thus, in this analysis, I only report the result using original attributes.
+
+## Classification Models & Result
