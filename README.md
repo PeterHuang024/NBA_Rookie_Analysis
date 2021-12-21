@@ -26,7 +26,7 @@ First, the original data has 1,340 data points but there is duplication. After r
 This task used 3 tree-based algorithms: Decision Tree, Random Forests, and Gradient Boosting Trees. For parameter-tuning, applying grid search with 5 folds cross validation and accuracy as evaluation to train 3 models and get the best parameters. Model results are summarized in below table. In addition, trained a random forest with scaled features to compare feature importance. Importance bar charts and features distribution in figure 4, 5, 6, 7. (More model and evaluation detail such as AUC graphs and model training can refer the notebook)
 
 | Metrics\Algorithms | Decision Tree | Random Forest | Gradient Boosting |
-|:--:|:--:||:--:|:--:|
+| ----------- | ----------- | ----------- | ----------- |
 | Precision | 0.78 | 0.81 | 0.80 |
 | Recall | 0.79 | 0.80 | 0.84 |
 | F1-score | 0.79 | 0.80 | 0.81 |
@@ -37,7 +37,6 @@ This task used 3 tree-based algorithms: Decision Tree, Random Forests, and Gradi
 |:--:|:--:|
 | Figure 4: Feature importance from random forest. The top 5 features are game played, field goal made, points per game, field goal percentage, and minutes played. | Figure 5: Distribution of field goals made of players play over five years or not |
 | ![figure6](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_6.png) | ![figure7](https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_7.png) 
-|:--:|:--:|
 | Figure 6: Distribution of average points per game of players play over five years or not. The red line is the average of rookie of the year in the past 25 seasons. | Figure 7: Distribution of average field goal percentage of players play over five years or not. The red line is the average of rookie of the year in the past 25 seasons. |
 
 ## Reference
