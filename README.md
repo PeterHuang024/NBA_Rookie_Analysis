@@ -11,6 +11,6 @@ To understand the dataset and target better, I use logistic regression to see wh
 
 Last, plotting the correlation matrix (figure 3) to see the relation between features. According to the graph, some features are highly correlated such as points per game and field goals made, points per game and field goal attempts, etc. These is a point I should concern.
 
-| ![figure1](<img src="https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/main/Graph/figure_1.png" alt="drawing" width="300"/>) | 
+| ![figure1](<img src="https://github.com/peterhuang024/NBA_Rookie_Analysis/blob/master/Graph/figure_1.png" alt="drawing" width="300"/>) | 
 |:--:| 
 | *Figure 1: Distribution of game played of players play over five years or not* |
